@@ -1,9 +1,9 @@
 ## Repository Setup
 - [X] Create GitHub repository "120-day-react-challenge"
 - [X] Initialize README.md with challenge description
-- [ ] Create folder structure for modules
-- [ ] Set up project board
-- [ ] Configure issues for tracking challenges
+- [X] Create folder structure for modules
+- [X] Set up project board
+- [X] Configure issues for tracking challenges
 
 ## Module 1: JavaScript Fundamentals
 ### Environment Setup
