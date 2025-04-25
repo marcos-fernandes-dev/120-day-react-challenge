@@ -1,0 +1,89 @@
+name: Daily Challenge
+description: Track progress for daily learning challenges
+title: "Day [NUMBER]: [TOPIC]"
+labels: ["challenge"]
+assignees:
+  - marcos-fernandes-dev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Daily Challenge Template
+        Use this template to track your daily React learning progress.
+  
+  - type: input
+    id: day-number
+    attributes:
+      label: Day Number
+      description: Which day of the challenge is this?
+      placeholder: "e.g., 1"
+    validations:
+      required: true
+      
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      description: What is the main topic for today?
+      placeholder: "e.g., Setting Up Development Environment"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      description: Which module does this day belong to?
+      options:
+        - Module 1: JavaScript Fundamentals
+        - Module 2: React Fundamentals
+        - Module 3: State Management
+        - Module 4: Testing and Debugging
+        - Module 5: Real-World Applications
+        - Module 6: Advanced React
+        - Module 7: Final Project
+    validations:
+      required: true
+      
+  - type: textarea
+    id: learning-objectives
+    attributes:
+      label: Learning Objectives
+      description: List the key learning objectives for today
+      placeholder: |
+        - Objective 1
+        - Objective 2
+        - Objective 3
+    validations:
+      required: true
+      
+  - type: textarea
+    id: challenge
+    attributes:
+      label: Challenge
+      description: Describe today's coding challenge
+      placeholder: "Write a detailed description of the challenge..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources
+      description: List helpful resources for this day's topic
+      placeholder: |
+        - [Resource name](URL)
+        - [Resource name](URL)
+    validations:
+      required: false
+      
+  - type: checkboxes
+    id: completion
+    attributes:
+      label: Completion Criteria
+      description: Mark your progress on this day's challenge
+      options:
+        - label: All learning objectives reviewed
+        - label: Challenge completed
+        - label: Code committed to repository
+        - label: CHECKLIST.md updated
